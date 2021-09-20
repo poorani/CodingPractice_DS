@@ -4,10 +4,10 @@ public class selectionSort {
 
     public static void selectSort(int Arr[]) {
         int temp = 0, min = 0;
-        for (int i = 0; i < Arr.length - 2; i++) {
+        for (int i = 0; i < Arr.length - 1; i++) {
             min = i;
             // find the smallest in n-i elements
-            for (int j = i + 1; j < Arr.length - 1; j++) {
+            for (int j = i + 1; j < Arr.length; j++) {
                 if (Arr[j] < Arr[min])
                     min = j;
             }
@@ -19,7 +19,7 @@ public class selectionSort {
     }
 
     public static void main(String[] args) {
-        int[] numArr = { 34, 12, 35, 10, 6, 7, 50 };
+        int[] numArr = { 34, 12, 35, 10, 6, 7, 20 };
 
         selectSort(numArr);
 
